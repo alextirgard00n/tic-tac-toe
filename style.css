@@ -1,11 +1,11 @@
-:root {
-    --background-color: #ededed;
+@font-face {
+    font-family: "San Francisco";
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 @font-face {
-    font-family: "San Francisco";
-    /* font-weight: 400; */
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    font-family: "San Francisco Bold";
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
 
@@ -18,8 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: var(--background-color);
-    font-family: "San Francisco";
+    background-color: #ededed;
+    font-family: "San Francisco", helvetica, arial, sans-serif;
 }
 
 header {
@@ -30,6 +30,53 @@ header {
 h1 {
     font-size: 3.5em;
     padding: 1.25rem 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* fill remaining of page  */
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #f3f3f3;
+    width: 60%;
+    max-width: 800px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .3),
+        0 0 25px -15px rgba(0, 0, 0, .2);
+}
+
+/* form {
+    display: block;
+    margin-top: 0em;
+} */
+.select {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+select {
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    /* border-bottom: 2px solid #203647; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #203647;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
 }
 
 
