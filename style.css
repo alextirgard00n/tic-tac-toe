@@ -23,6 +23,12 @@ body {
     /* flex: 1; */
 }
 
+select,
+option,
+button {
+    -webkit-appearance: none;
+}
+
 header {
     display: flex;
     justify-content: center;
