@@ -19,6 +19,7 @@
             <div class="item select">
                 <form action="" class="form">
                     <select name="levels" id="levels">
+                        <option value="" disabled selected hidden>Select your difficulty</option>
                         <option value="Play against a friend">Play against a friend</option>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
@@ -27,9 +28,25 @@
                     </select>
                 </form>
             </div>
-            <div class="item player"></div>
-            <div class="item board"></div>
-            <div class="item reset"></div>
+            <div class="item player">
+                <button class="playerX">X</button>
+                <button class="playerO">O</button>
+            </div>
+
+            <div class="item board">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="item reset">
+                <button class="restartBtn">Restart</button>
+            </div>
 
         </div>
     </main>
