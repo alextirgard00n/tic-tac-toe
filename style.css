@@ -118,6 +118,7 @@ option:hover {
     font-size: 16px;
     /* fix this */
     transition: .5s;
+    color: black;
 }
 
 .playerX:hover,
@@ -179,6 +180,7 @@ option:hover {
     font-size: 1.5em;
     border-radius: 10px;
     transition: .5s;
+    color: black;
 }
 
 .restartBtn:hover {
