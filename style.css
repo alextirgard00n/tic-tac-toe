@@ -97,9 +97,9 @@ option {
     font-size: 14px;
 }
 
-option:hover {
+/* option:hover {
     background-color: pink;
-}
+} */
 
 .player {
     display: flex;
@@ -125,19 +125,19 @@ option:hover {
 .playerO:hover {
     cursor: pointer;
     color: #203647;
-    /* box-shadow: -1px 7px 22px -6px #14bdac; */
-    box-shadow: -1px 7px 22px -6px pink;
+    box-shadow: -1px 7px 22px -6px #14bdac;
+    /* box-shadow: -1px 7px 22px -6px pink; */
 }
 
 .selected {
     border: 2px solid black;
-    box-shadow: -1px 7px 22px -6px pink;
+    box-shadow: -1px 7px 22px -6px #14bdac;
 }
 
 .board {
     margin-top: 2em;
-    /* background-color: #14bdac; */
-    background-color: pink;
+    background-color: #14bdac;
+    /* background-color: pink; */
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -149,8 +149,8 @@ option:hover {
 
 .field {
     font-size: 54px;
-    /* background-color: #14bdac; */
-    background-color: pink;
+    background-color: #14bdac;
+    /* background-color: pink; */
     color: #12232E;
     border: none;
     border-bottom: 3px solid #203647;
@@ -167,7 +167,7 @@ option:hover {
 
 .field:hover {
     cursor: pointer;
-    background-color: rgb(250, 213, 219);
+    background-color: #f3f3f3;
 }
 
 
@@ -185,8 +185,8 @@ option:hover {
 
 .restartBtn:hover {
     cursor: pointer;
-    /* box-shadow: -1px 7px 22px -6px #14bdac; */
-    box-shadow: -1px 7px 22px -6px pink;
+    box-shadow: -1px 7px 22px -6px #14bdac;
+    /* box-shadow: -1px 7px 22px -6px pink; */
 }
 
 .footer {
