@@ -73,6 +73,7 @@ main {
 
 .fa-angles-down {
     font-size: 12px;
+    padding-right: 5px;
 }
 
 select:hover,
@@ -88,6 +89,30 @@ select {
     font-size: 15px;
     color: #203647;
     background-color: #f3f3f3;
+}
+
+select:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f00;
+}
+
+select:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
 }
 
 option {
@@ -151,6 +176,7 @@ option {
     border: none;
     border-bottom: 3px solid #203647;
     border-right: 3px solid #203647;
+    transition: .5s;
 }
 
 .field.no-b {
@@ -163,7 +189,8 @@ option {
 
 .field:hover {
     cursor: pointer;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
+    background-color: #1dd9c6;
 }
 
 
@@ -203,6 +230,7 @@ option {
     align-items: center;
     gap: 50px;
     font-size: 2rem;
+    transition: 0.3s ease-in-out;
 }
 
 .overlay {
@@ -216,6 +244,7 @@ option {
     background-color: rgba(0, 0, 0, 0.5);
     /* transition: .1s ease-in-out; */
     backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
 }
 
 .message {
