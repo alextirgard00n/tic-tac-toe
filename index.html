@@ -31,25 +31,31 @@
                 <i class="fa-solid fa-angles-down"></i>
             </div>
             <div class="item player">
-                <button class="playerX">X</button>
+                <button class="playerX selected">X</button>
                 <button class="playerO">O</button>
             </div>
             <div class="item board">
-                <button class="field"></button>
-                <button class="field"></button>
-                <button class="field no-r"></button>
-                <button class="field"></button>
-                <button class="field"></button>
-                <button class="field no-r"></button>
-                <button class="field no-b"></button>
-                <button class="field no-b"></button>
-                <button class="field no-r no-b"></button>
+                <button class="field" data-index="0"></button>
+                <button class="field" data-index="1"></button>
+                <button class="field no-r" data-index="2"></button>
+                <button class="field" data-index="3"></button>
+                <button class="field" data-index="4"></button>
+                <button class="field no-r" data-index="5"></button>
+                <button class="field no-b" data-index="6"></button>
+                <button class="field no-b" data-index="7"></button>
+                <button class="field no-r no-b" data-index="8"></button>
             </div>
             <div class="item reset">
                 <button class="restartBtn">Restart</button>
             </div>
         </div>
     </main>
+
+    <div class="modal">
+        <div class="message">Player X has won!</div>
+        <div class="playAgain">Play Again?</div>
+    </div>
+    <div class="overlay "></div>
 
     <footer class="footer">
         <p>Copyright © <span class="currYear"></span>&nbsp;alextirgard00n</p>
