@@ -42,14 +42,7 @@ const gameboard = (() => {
         return board[index];
     };
 
-    //not needed, for testing purposes only 
-    const printBoard = () => {
-        for (let i = 0; i < board.length; i++) {
-            console.log(board[i]);
-        }
-    }
-
-    return { reset, setField, getField, printBoard, board };
+    return { reset, setField, getField };
 })();
 
 
@@ -93,10 +86,6 @@ const displayController = (() => {
         overlay.classList.remove('active');
     });
 
-
-
-    // return { updateGameboard };
-
 })();
 
 
@@ -106,8 +95,6 @@ const gameController = (() => {
     const playerX = Player("X");
     const playerO = Player("O");
 
-    // const playerXbtn = document.querySelector('.playerX');
-    // const playerObtn = document.querySelector('.playerO');
     let round = 1;
     let isOver = false;
 
@@ -174,7 +161,6 @@ const gameController = (() => {
             );
     };
 
-    // return { playRound, getIsOver, reset };
     return { playRound, getIsOver, reset };
 })();
 
