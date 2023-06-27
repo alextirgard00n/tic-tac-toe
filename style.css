@@ -121,10 +121,6 @@ option {
     font-size: 14px;
 }
 
-/* option:hover {
-    background-color: pink;
-} */
-
 .player {
     display: flex;
     justify-content: center;
@@ -145,12 +141,12 @@ option {
     color: black;
 }
 
-.playerX:hover,
+/* .playerX:hover,
 .playerO:hover {
     cursor: pointer;
     color: #203647;
     box-shadow: -1px 7px 22px -6px #14bdac;
-}
+} */
 
 .selected {
     border: 2px solid black;
